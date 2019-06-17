@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{0E413705-B0EA-20EC-BA5E-B50692F5A425}</ProjectGuid>
+    <ProjectGuid>{E036CD51-0AEB-1EA8-494F-4F3A41E32D75}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -80,19 +80,19 @@
     <Compile Include="Assets\FNavigation\UseDemo\demoMoveController.cs" />
     <None Include="Assets\CAI\GlobalAssets\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/WorkSoftware/Unity2018.4/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -296,28 +296,28 @@
       <HintPath>D:/WorkSoftware/Unity2018.4/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="cai-nav-u3d">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Assets/CAI/cai-nav-u3d.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Assets/CAI/cai-nav-u3d.dll</HintPath>
     </Reference>
     <Reference Include="cai-nav">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Assets/CAI/cai-nav.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Assets/CAI/cai-nav.dll</HintPath>
     </Reference>
     <Reference Include="cai-nmbuild-extras-u3d">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Assets/CAI/cai-nmbuild-extras-u3d.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Assets/CAI/cai-nmbuild-extras-u3d.dll</HintPath>
     </Reference>
     <Reference Include="cai-util-u3d">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Assets/CAI/cai-util-u3d.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Assets/CAI/cai-util-u3d.dll</HintPath>
     </Reference>
     <Reference Include="cai-util">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Assets/CAI/cai-util.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Assets/CAI/cai-util.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/NDWork/Learning_Projects/SamplePack/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/FM_Git/FNavigation/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/WorkSoftware/Unity2018.4/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

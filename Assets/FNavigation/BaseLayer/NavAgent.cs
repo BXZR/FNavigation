@@ -202,14 +202,14 @@ namespace FNavigation
         public NavAgentMode ChangeMode()
         {
             CrowdManager crowd = navGroup.crowd;
-            if ((flags & NavFlag.UseCrowd) != 0 && ((crowdAgent != null) || (crowd != null && crowd.AgentCount < crowd.MaxAgents)))
-            {
-                // Want to use the crowd, and can use crowd.
-                if ((flags & NavFlag.GoalIsDynamic) == 0)
-                    return NavAgentMode.CrowdMove;
-                else
-                    return NavAgentMode.FollowGoalCrowdMove;
-            }
+            //if ((flags & NavFlag.UseCrowd) != 0 && ((crowdAgent != null) || (crowd != null && crowd.AgentCount < crowd.MaxAgents)))
+            //{
+            //    // Want to use the crowd, and can use crowd.
+            //    if ((flags & NavFlag.GoalIsDynamic) == 0)
+            //        return NavAgentMode.CrowdMove;
+            //    else
+            //        return NavAgentMode.FollowGoalCrowdMove;
+            //}
    
             //return NavAgentMode.SimpleMove;
             return NavAgentMode.CrowdMove;
