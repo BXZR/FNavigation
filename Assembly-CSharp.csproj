@@ -72,11 +72,11 @@
     <Compile Include="Assets\FNavigation\OperateLayer\NavPlanner.cs" />
     <Compile Include="Assets\FNavigation\OperateLayer\NavState.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgent.cs" />
+    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgentController.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnitySimpleMovePlan.cs" />
-    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityNavManagerMaker.cs" />
+    <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettingManager.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettings.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\CrowdAvoidanceSet.cs" />
-    <Compile Include="Assets\FNavigation\UseDemo\demoAgentController.cs" />
     <Compile Include="Assets\FNavigation\UseDemo\demoMoveController.cs" />
     <None Include="Assets\CAI\GlobalAssets\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -2378,7 +2378,6 @@ GameObject:
   - component: {fileID: 1434911131}
   - component: {fileID: 1434911130}
   - component: {fileID: 1434911129}
-  - component: {fileID: 1434911135}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2395,9 +2394,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434911128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae7b30efb9a04443bdc1a0edc7c96d0, type: 3}
+  m_Script: {fileID: 11500000, guid: abed7927ccd35e741bfacd3b38bc573b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mNavmeshData: {fileID: 11400000, guid: 9ec52e7a79521bb4694e61608c8349ff, type: 2}
+  mGroupsSettings: {fileID: 11400000, guid: f9a574fb906d58e45860ff77c036c090, type: 2}
+  mAvoidanceSet: {fileID: 11400000, guid: e443237137d660646bfcc055f0f17ace, type: 2}
+  mMaxQueryNodes: 1024
+  mMaxCrowdAgents: 2000
+  mMaxAgentRadius: 0.5
+  mMaxPath: 1024
+  mMaxStraightPath: 4
+  mMaxAgents: 2000
+  mExtents: {x: 1, y: 1, z: 1}
+  mWideExtents: {x: 10, y: 10, z: 10}
+  mHeightTolerance: 1
+  mTurnThreshold: 0.05
+  mAngleAt: 1
 --- !u!81 &1434911130
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2470,34 +2483,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1434911135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434911128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e22aaddcb487744a9efcae863389e22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mNavmeshData: {fileID: 11400000, guid: 9ec52e7a79521bb4694e61608c8349ff, type: 2}
-  mGroupsSettings: {fileID: 11400000, guid: f9a574fb906d58e45860ff77c036c090, type: 2}
-  mAvoidanceSet: {fileID: 11400000, guid: e443237137d660646bfcc055f0f17ace, type: 2}
-  mMaxQueryNodes: 2048
-  mMaxCrowdAgents: 232
-  mMaxAgentRadius: 0.5
-  mMaxPath: 256
-  mMaxStraightPath: 4
-  mMaxAgents: 232
-  mExtents: {x: 1, y: 1, z: 1}
-  mWideExtents: {x: 10, y: 10, z: 10}
-  mRadiusAt: 0.1
-  mRadiusNear: 1
-  mHeightTolerance: 1
-  mTurnThreshold: 0.05
-  mAngleAt: 1
 --- !u!1 &1453665345
 GameObject:
   m_ObjectHideFlags: 0
