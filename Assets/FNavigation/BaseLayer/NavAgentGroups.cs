@@ -26,14 +26,6 @@ namespace FNavigation
         //最大转向速度
         public float maxTurnSpeed = 8;
 
-        //下面这三个速度其实在真正使用的时候需要看移动的pannner里面的具体移动计划
-        //最大移动速度
-        public float runSpeed = 3.5f;
-        //中速
-        public float jogSpeed = 2.8f;
-        //慢速
-        public float walkSpeed = 1.5f;
-
         //共享的路径缓冲区
         public readonly uint[] pathBuffer;
 

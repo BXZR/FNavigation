@@ -11,6 +11,7 @@ namespace FNavigation
         private NavManager mNavManager;
         private NavAgent mNavAgent;
         public byte agentGroup = 0;
+        public float moveSpeed = 4f;
         private int mManagerIndex = -1;
 
 
@@ -73,6 +74,7 @@ namespace FNavigation
             mNavManager = NavManager.ActiveManager;
             //建立navAgent,这是真正用于移动的agent
             mNavAgent = mNavManager.CreateAgent(agentGroup, transform);
+            mNavAgent.moveSpeed = this.moveSpeed;
             if (mNavAgent == null)
             {
                 Debug.LogError(this.name + ": agent create failed");

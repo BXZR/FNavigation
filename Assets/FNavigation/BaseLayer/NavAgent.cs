@@ -27,6 +27,8 @@ namespace FNavigation
         public NavmeshPoint plannerGoal;
         //目标方向
         public Quaternion goalRotation;
+        //自定义的移动速度
+        public float moveSpeed;
 
         //当前的方向
         public Quaternion rotation;

@@ -149,7 +149,6 @@ namespace FNavigation
             //在这里调整速度（这理由可以非常任性地修改的空间）
             float maxDelta = theAgent.crowdConfig.maxAcceleration * 0.02f;
             float desiredSpeed = theAgent.crowdConfig.maxSpeed;
-
             if (Vector3Util.GetDistance2D(theAgent.desiredPosition.point, theAgent.plannerGoal.point) < theAgent.crowdConfig.radius * 3)
             {
                 //如果已经很贴近目标，就做了个减速，这个还是根据具体需求来搞吧

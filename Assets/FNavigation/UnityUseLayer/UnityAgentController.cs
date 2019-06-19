@@ -13,16 +13,13 @@ namespace FNavigation
         private ScriptableObject mNavmeshData = null;
 
         [SerializeField]
-        private AgentGroupSettings mGroupsSettings = null;
-
-        [SerializeField]
         private CrowdAvoidanceSet mAvoidanceSet = null;
 
         [SerializeField]
         private int mMaxQueryNodes = 2048;
 
         [SerializeField]
-        private int mMaxCrowdAgents = 20;
+        private int mMaxCrowdAgents = 200;
 
         [SerializeField]
         private float mMaxAgentRadius = 0.5f;
@@ -34,7 +31,7 @@ namespace FNavigation
         private int mMaxStraightPath = 4;
 
         [SerializeField]
-        private int mMaxAgents = 20;
+        private int mMaxAgents = 200;
 
         [SerializeField]
         private Vector3 mExtents = new Vector3(1, 1, 1);
@@ -71,13 +68,6 @@ namespace FNavigation
                 return null;
             }
 
-            if (!mAvoidanceSet || !mGroupsSettings)
-            {
-                Debug.LogError(
-                    name + ": Aborted initialization. Avoidance and/or agent groups not available.");
-                return null;
-            }
-
             Navmesh navmesh = NavmeshData.GetNavmesh();
             NavmeshQuery query;
             NavStatus status = NavmeshQuery.Create(navmesh, mMaxQueryNodes, out query);
@@ -101,13 +91,13 @@ namespace FNavigation
             }
             NavGroup mGroup = new NavGroup(navmesh, query, crowd, crowd.QueryFilter, mExtents, false);
 
-            int count = mGroupsSettings.GroupCount;
+            int count = AgentGroupSettingManager.GetGroupCount();
             Dictionary<byte, NavAgentGroups> mAgentGroups = new Dictionary<byte, NavAgentGroups>(count);
 
             for (int i = 0; i < count; i++)
             {
                 byte groupId;
-                NavAgentGroups group = mGroupsSettings.CreateAgentGroup(i, mMaxPath, mMaxStraightPath, out groupId);
+                NavAgentGroups group = AgentGroupSettingManager.CreateAgentGroup(i, mMaxPath, mMaxStraightPath, out groupId);
                 group.angleAt = mAngleAt;
                 group.heightTolerance = mHeightTolerance;
                 group.turnThreshold = mTurnThreshold;
