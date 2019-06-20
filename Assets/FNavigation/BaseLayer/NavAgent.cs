@@ -203,7 +203,7 @@ namespace FNavigation
         //这里的mode其实应该考虑性能等等的问题的，这是一个很大的坑
         public NavAgentMode ChangeMode()
         {
-            CrowdManager crowd = navGroup.crowd;
+            //CrowdManager crowd = navGroup.crowd;
             //if ((flags & NavFlag.UseCrowd) != 0 && ((crowdAgent != null) || (crowd != null && crowd.AgentCount < crowd.MaxAgents)))
             //{
             //    // Want to use the crowd, and can use crowd.
@@ -212,8 +212,9 @@ namespace FNavigation
             //    else
             //        return NavAgentMode.FollowGoalCrowdMove;
             //}
-   
-            //return NavAgentMode.SimpleMove;
+            if(NavManager.ActiveManager == null || NavManager.ActiveManager.theModeNow == NavAgentMode.SimpleMove)
+                return NavAgentMode.SimpleMove;
+
             return NavAgentMode.CrowdMove;
         }
 

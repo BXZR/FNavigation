@@ -77,6 +77,7 @@
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettingManager.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\CrowdAvoidanceSet.cs" />
     <Compile Include="Assets\FNavigation\UseDemo\demoMoveController.cs" />
+    <Compile Include="Assets\UnityNav\UnityNav.cs" />
     <None Include="Assets\CAI\GlobalAssets\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

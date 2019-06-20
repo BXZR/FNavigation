@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &5729235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -237,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &7076406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -329,6 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &26443425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -421,6 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &30631629
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -513,6 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &48069833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -605,6 +610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &66114808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -697,6 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &70836085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -789,6 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &74854214
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -881,6 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &111790823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -973,6 +982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &111880909
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1065,6 +1075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &123373819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1157,6 +1168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &123919077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1249,6 +1261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &146392165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1341,6 +1354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &152088413
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1433,6 +1447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &157014834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1525,6 +1540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &162682531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1617,6 +1633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &167002539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1709,6 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &172100190
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1892,6 +1910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &206291616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1984,6 +2003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &220295360
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2076,6 +2096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &256302451
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2168,6 +2189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &258820926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2260,6 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &264185609
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2352,6 +2375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &298098590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2444,6 +2468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &366664461
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2536,6 +2561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &378443173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2628,6 +2654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &410331965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2720,6 +2747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &433962629
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2812,6 +2840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &447024276
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2904,6 +2933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &457850372
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2996,6 +3026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &466240470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3088,6 +3119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &474090826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3180,6 +3212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &485678806
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3272,6 +3305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &490923697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3364,6 +3398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &493274116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3456,6 +3491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &509036917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3548,6 +3584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &514620361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3640,6 +3677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &527817913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3732,6 +3770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &533900783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3824,6 +3863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &551851932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3916,6 +3956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &562119451
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4008,6 +4049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &565790582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4100,6 +4142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &616210226
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4192,6 +4235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &626002395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4284,6 +4328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &665634679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4376,6 +4421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &675255932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4468,6 +4514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &695251965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4560,6 +4607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &698029833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4652,6 +4700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &715252444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4744,6 +4793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &763389845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4836,6 +4886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &777180905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4928,6 +4979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &779728328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5020,6 +5072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &783884736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5112,6 +5165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &796348714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5204,6 +5258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &807221133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5296,6 +5351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &809527166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5388,6 +5444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &812376169
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5480,6 +5537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &840586502
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5572,6 +5630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &846131470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5664,6 +5723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &869828867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5756,6 +5816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &883777168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5848,6 +5909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &918504642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5940,6 +6002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &965013055
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6032,6 +6095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &972697819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6215,6 +6279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1001052898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6376,6 +6441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1023407735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6468,6 +6534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1056724159
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6560,6 +6627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1057207467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6652,6 +6720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1058003117
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6744,6 +6813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1069514032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6836,6 +6906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1092310707
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6928,6 +6999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1093842515
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7020,6 +7092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1104992417
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7112,6 +7185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1106181821
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7204,6 +7278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1117665113
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7296,6 +7371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1131003360
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7388,6 +7464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1136915081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7480,6 +7557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1192533770
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7572,6 +7650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1221850864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7664,6 +7743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1231225433
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7756,6 +7836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1242771756
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7848,6 +7929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1261452501
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7940,6 +8022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1264649689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8032,6 +8115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1296648048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8124,6 +8208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1298305177
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8215,7 +8300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentGroup: 0
-  moveSpeed: 4
+  moveSpeed: 49
+  mouseIndex: 1
 --- !u!23 &1329224731
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8308,6 +8394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1330972445
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8400,6 +8487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1349110816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8492,6 +8580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1368570289
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8584,6 +8673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1372224915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8676,6 +8766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1386480381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8768,6 +8859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1429069000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8859,19 +8951,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abed7927ccd35e741bfacd3b38bc573b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theAgentMode: 0
   mNavmeshData: {fileID: 11400000, guid: 9ec52e7a79521bb4694e61608c8349ff, type: 2}
   mAvoidanceSet: {fileID: 11400000, guid: e443237137d660646bfcc055f0f17ace, type: 2}
-  mMaxQueryNodes: 1024
-  mMaxCrowdAgents: 20000
+  mMaxQueryNodes: 2048
+  mMaxCrowdAgents: 200
   mMaxAgentRadius: 0.5
-  mMaxPath: 1024
+  mMaxPath: 256
   mMaxStraightPath: 4
-  mMaxAgents: 20000
+  mMaxAgents: 200
   mExtents: {x: 1, y: 1, z: 1}
   mWideExtents: {x: 10, y: 10, z: 10}
   mHeightTolerance: 1
   mTurnThreshold: 0.05
-  mAngleAt: 15
+  mAngleAt: 1
 --- !u!81 &1434911130
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8977,6 +9070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1438251511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9069,6 +9163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1453665347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9161,6 +9256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1457020746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9253,6 +9349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1475676730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9345,6 +9442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1485776460
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9437,6 +9535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1486138298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9529,6 +9628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1488452666
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9621,6 +9721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1503060276
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9713,6 +9814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1555064063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9805,6 +9907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1595981110
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9897,6 +10000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1622276430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9989,6 +10093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1634072509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10081,6 +10186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1647521054
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10173,6 +10279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1680689728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10265,6 +10372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1686405622
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10357,6 +10465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1710762541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10449,6 +10558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1732848111
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10541,6 +10651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1759320819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10633,6 +10744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1763089807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10725,6 +10837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1794696615
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10817,6 +10930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1796399218
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10909,6 +11023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1817795642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11001,6 +11116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1821201166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11093,6 +11209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1842658232
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11185,6 +11302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1844872164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11277,6 +11395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &1845483511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11369,6 +11488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1913705216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11461,6 +11581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1956781363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11553,6 +11674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &1973422772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11736,6 +11858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &2063336825
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11828,6 +11951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 0
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &2082892042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11920,6 +12044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &2105408239
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12012,6 +12137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &2130470771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12104,6 +12230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 1
 --- !u!23 &2131878035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12196,6 +12323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &2135623354
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12288,6 +12416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentGroup: 1
   moveSpeed: 4
+  mouseIndex: 0
 --- !u!23 &2139396962
 MeshRenderer:
   m_ObjectHideFlags: 0

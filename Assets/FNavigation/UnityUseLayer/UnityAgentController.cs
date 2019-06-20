@@ -6,8 +6,11 @@ using UnityEngine;
 
 namespace FNavigation
 {
+    //这个AgentController的功能比较全，可以切simpe进而crowd两种模式
     public class UnityAgentController : MonoBehaviour
     {
+
+        public NavAgentMode theAgentMode = NavAgentMode.SimpleMove;
 
         [SerializeField]
         private ScriptableObject mNavmeshData = null;
@@ -107,16 +110,13 @@ namespace FNavigation
             return NavManager.Create(mMaxAgents, mGroup, mAgentGroups);
         }
 
-
-
-
         void Awake()
         {
             NavManager.ActiveManager = CreateManager(); 
             mManager = NavManager.ActiveManager;
+            mManager.theModeNow = this.theAgentMode;
             mManager.StartThreadUpdate();
         }
-
 
         void Update()
         {

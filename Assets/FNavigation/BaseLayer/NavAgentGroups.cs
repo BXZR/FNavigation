@@ -8,7 +8,9 @@ using UnityEngine;
 namespace FNavigation
 {
     //共有的寻路设定和资源
-    //暂时看上去是一个数据的容器
+    //这是一个数据的共有容器
+    //多个agent共有一个group的资源就可以了，主要是PathCorridor和NavPaths的复用
+    //不过这里应该还有可以挖的优化的空间
     public class NavAgentGroups
     {
         //基础的crowd设定
