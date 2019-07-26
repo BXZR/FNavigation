@@ -74,6 +74,7 @@
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgent.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgentController.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnitySimpleMovePlan.cs" />
+    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityObstacle.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettingManager.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\CrowdAvoidanceSet.cs" />
     <Compile Include="Assets\FNavigation\UseDemo\demoMoveController.cs" />
