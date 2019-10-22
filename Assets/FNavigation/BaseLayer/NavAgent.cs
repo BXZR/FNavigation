@@ -156,6 +156,7 @@ namespace FNavigation
             else
             {
                 agentGroup.ReturnPath(path);
+
                 path = null;
                 flags &= ~NavFlag.PathInUse;
             }
@@ -300,6 +301,74 @@ namespace FNavigation
             Vector3 goal = plannerGoal.point;
             bool Check2D = Vector2Util.SloppyEquals(new Vector2(pos.x, pos.z), new Vector2(goal.x, goal.z), 0.005f);
             return (Check3D | Check2D);
+        }
+
+        //获取路点信息
+        public Vector3[] GetRoutePoints()
+        {
+            if (NavManager.ActiveManager == null)
+            {
+                return new Vector3[0];
+            }
+
+            Vector3[] theRoutePoints = new Vector3[path.straightCount];
+            for (int i = 0; i < path.straightCount; i++)
+                theRoutePoints[i] = path.straightPoints[i];
+            return theRoutePoints;
+
+            /*
+             *如果是simplemove模式，也可以在corridor.Corners.verts里面获得相同的路点信息
+            if (NavManager.ActiveManager.theModeNow == NavAgentMode.CrowdMove)
+            {
+                return path.straightPoints;
+            }
+            else
+            {
+                return corridor.Corners.verts;
+            }
+            */
+        }
+
+        //获取当前路点下标
+        public int GetCurrentWayPointIndex()
+        {
+            if (NavManager.ActiveManager == null)
+                return -1;
+            if (path.straightCount <= 0)
+                return -1;
+
+            if (corridor == null || corridor.Corners == null)
+                return -1;
+
+            WaypointFlag[] flags = corridor.Corners.flags;
+            /*
+            string showString = "";
+            for (int i = 0; i < flags.Length; i++)
+            {
+                showString += flags[i];
+            }
+            Debug.Log(showString);
+            */
+
+            /*
+            路点的处理是到这来的
+            第一个路点结束
+            0000EndEnd00000000000000000000000000
+            第二个路点结束
+            000EndEndEnd00000000000000000000000000
+            第三个路点结束
+            00EndEndEndEnd00000000000000000000000000
+            所以起点算一个路点
+            */
+            for (int i = 0; i < flags.Length; i++)
+            {
+                if (flags[i] == WaypointFlag.End)
+                {
+                    return path.straightCount -1 - i;
+                }
+            }
+            //返回的是当前目标路点下标
+            return path.straightCount - 1;
         }
 
     }

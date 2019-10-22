@@ -6,6 +6,8 @@ namespace FNavigation
     public class NavState 
     {
         public static NavState Instance = new NavState();
+        //状态量：导航的位置刷新是否生效
+        public bool isMoveControling = true;
         //移动计划开启的时候发生的事情
         public virtual bool Enter() { return true; }
         //移动的时候发生的事情

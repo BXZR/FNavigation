@@ -1,4 +1,5 @@
 ﻿using org.critterai.nav;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,10 @@ namespace FNavigation
         public int pathCount = 0;
         //直接路径缓存长度
         public int straightCount = 0;
+        //记录：最大直接路径信息长度
+        private int mMaxStraightPathSize = 0;
+
+        public bool isDirty = false;
 
         public NavPaths(int maxPathSize, int maxStraightPathSize)
         {
@@ -29,6 +34,7 @@ namespace FNavigation
             straightPoints = new Vector3[maxStraightPathSize];
             straightFlags = new WaypointFlag[maxStraightPathSize];
             straightPath = new uint[maxStraightPathSize];
+            mMaxStraightPathSize = maxStraightPathSize;
         }
 
         //返回路径中最后一个多边形
@@ -116,6 +122,9 @@ namespace FNavigation
             if (iGoal == -1)
                 return (NavStatus.Failure | NavStatus.InvalidParam);
             //NavmeshQuery是直通C++的底层寻路
+
+            Array.Clear(straightPoints , 0 , straightPoints.Length);
+
             NavStatus status = query.GetStraightPath(start.point, goal.point
                 , path, iStart, iGoal - iStart + 1
                 , straightPoints, straightFlags, straightPath, out straightCount);
@@ -142,7 +151,6 @@ namespace FNavigation
             do
             {
                 targetIndex--;
-
                 targetRef = (straightPath[targetIndex] == 0 ? goal.polyRef : straightPath[targetIndex]);
             }
             while (FindPolyRefReverse(iStart, targetRef) - iStart + 1 > maxLength && targetIndex > 0);

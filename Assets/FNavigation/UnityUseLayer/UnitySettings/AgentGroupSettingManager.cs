@@ -48,8 +48,8 @@ namespace FNavigation
         public float pathOptimizationRange = 8f;
         public float radius = 0.4f;
         public float separationWeight = 2f;
-        public int maxPoolCorridors = 10;
-        public int maxPoolPaths = 10;
+        public int maxPoolCorridors = 100;
+        public int maxPoolPaths = 100;
         public CrowdUpdateFlags updateFlags = CrowdUpdateFlags.AnticipateTurns;
     }
 }

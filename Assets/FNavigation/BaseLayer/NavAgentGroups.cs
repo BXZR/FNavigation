@@ -7,8 +7,7 @@ using UnityEngine;
 //正式使用的寻路名字空间为FNavigation
 namespace FNavigation
 {
-    //共有的寻路设定和资源
-    //这是一个数据的共有容器
+    //这是一个数据的共有容器,共有的寻路设定和资源
     //多个agent共有一个group的资源就可以了，主要是PathCorridor和NavPaths的复用
     //不过这里应该还有可以挖的优化的空间
     public class NavAgentGroups
@@ -89,7 +88,10 @@ namespace FNavigation
         public NavPaths GetPath()
         {
             if (mPaths.Count > 0)
-                return mPaths.Pop();
+            {
+                NavPaths aPath = mPaths.Pop();
+                return aPath;
+            }
 
             return new NavPaths(mMaxPathSize, mMaxStraightPathSize);
         }
@@ -97,15 +99,20 @@ namespace FNavigation
         //回收这个路径（目前都是在NavAgent里面处理的）
         public void ReturnPath(NavPaths path)
         {
+
             if (mPaths.Count >= mMaxPaths || path == null
                 || path.path.Length != mMaxPathSize
-                || path.straightPath.Length != mMaxStraightPathSize)
+                || (path.straightPath != null && path.straightPath.Length != mMaxStraightPathSize)
+            )
             {
                 return;
             }
 
+            //清理过去存过的内存
             path.pathCount = 0;
             path.straightCount = 0;
+            //这句话非常重要，这里不仅仅是释放内存，也是外边的一个重要的标记
+            path.straightPath = null;
 
             mPaths.Push(path);
         }

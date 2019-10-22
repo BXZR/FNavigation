@@ -7,7 +7,7 @@ namespace FNavigation
     {
         //简单寻路，这种事最基本的寻路，但是多个agent的情况下会有重叠的现象发生
         SimpleMove,
-        //Crowd寻路，这个是更加复杂一点的寻路，多个agent不会发生重叠（目前尚未实现）
+        //Crowd寻路，这个是更加复杂一点的寻路，多个agent不会发生重叠
         CrowdMove,
         //跟踪一个目标的Crowd寻路
         FollowGoalCrowdMove

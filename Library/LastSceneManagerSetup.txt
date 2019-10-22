@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FNavigation/UseDemo/FM_DEMO.unity
+- path: Assets/FNavigationUseDemo/FM_DEMO.unity
   isLoaded: 1
   isActive: 1

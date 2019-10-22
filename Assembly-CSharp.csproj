@@ -74,11 +74,10 @@
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgent.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgentController.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnitySimpleMovePlan.cs" />
-    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityObstacle.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettingManager.cs" />
-    <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\CrowdAvoidanceSet.cs" />
-    <Compile Include="Assets\FNavigation\UseDemo\demoMoveController.cs" />
-    <Compile Include="Assets\UnityNav\UnityNav.cs" />
+    <Compile Include="Assets\FNavigationUseDemo\demoManagerStart.cs" />
+    <Compile Include="Assets\FNavigationUseDemo\demoMoveController.cs" />
+    <None Include="Assets\Android\libs\arm64-v8a\readme.txt" />
     <None Include="Assets\CAI\GlobalAssets\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/FM_Git/FNavigation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

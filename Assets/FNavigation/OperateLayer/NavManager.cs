@@ -14,7 +14,7 @@ namespace FNavigation
     public class NavManager
     {
         public static NavManager ActiveManager = null;
-        public static float threadUpdateTimer = 0.03f;//多线程等待时间
+        public static float threadUpdateTimer = 0.02f;//多线程等待时间
 
         //共有的group配置和资源（底层）
         private NavGroup mNavGroup;
@@ -39,6 +39,7 @@ namespace FNavigation
                 || navGroup.query == null || navGroup.query.IsDisposed
                 || agentGroups == null || agentGroups.Count == 0)
             {
+                Debug.LogError(" NavManager Create navGroup.mesh == " + (navGroup.mesh == null));
                 return null;
             }
 
@@ -118,26 +119,44 @@ namespace FNavigation
             {
                 Thread.Sleep(TimeSpan.FromSeconds(threadUpdateTimer));
                 //执行到这个地方时，会等待set调用后改变了信号才接着执行
-
-                if (mNavGroup.crowd.IsDisposed)
-                    return;
-
-                //这里进入critter的dll，然后再调用recast的dll
-                //目前有关crowd的方法还在研究中，没有使用
-                mNavGroup.crowd.Update(threadUpdateTimer);
-                 
-                for (int i = 0; i < mPlanners.Length; i++)
-                {
-                    NavState aPlan = mPlanners[i];
-
-                    if (aPlan == null || aPlan.Update())
-                        continue;
-
-                    aPlan.Exit();
-                    if (!aPlan.Enter())
-                        RemoveAgent(i);
-                }
+                //myResetEvent.WaitOne();
+                PlanUpdateInThread();
             }
+        }
+
+        public void PlanUpdateInThread()
+        {
+            if (mNavGroup.crowd.IsDisposed)
+                return;
+
+            //这里进入critter的dll，然后再调用recast的dll
+            //目前有关crowd的方法还在研究中，没有使用
+            mNavGroup.crowd.Update(threadUpdateTimer);
+
+            for (int i = 0; i < mPlanners.Length; i++)
+            {
+                NavState aPlan = mPlanners[i];
+
+                if (aPlan == null || aPlan.Update())
+                    continue;
+
+                aPlan.Exit();
+                if (!aPlan.Enter())
+                    RemoveAgent(i);
+            }
+        }
+
+        //单独刷新一个plan的外部方法(这是一种很危险的方法，尽可能不要用)
+        public void UpdateSinglePlan(int index)
+        {
+            NavState aPlan = mPlanners[index];
+
+            if (aPlan == null || aPlan.Update())
+                return;
+
+            aPlan.Exit();
+            if (!aPlan.Enter())
+                RemoveAgent(index);
         }
 
         //开启底层的更新线程

@@ -1,40 +1,41 @@
 ﻿using org.critterai.nav;
 using org.critterai.nav.u3d;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace FNavigation
 {
-    //这个AgentController的功能比较全，可以切simpe进而crowd两种模式
-    public class UnityAgentController : MonoBehaviour
+    public class UnityAgentController 
     {
+        public bool isSetup = false;
 
         public NavAgentMode theAgentMode = NavAgentMode.SimpleMove;
-
         [SerializeField]
         private ScriptableObject mNavmeshData = null;
+        private byte[] navMeshData = new byte[0];
 
         [SerializeField]
-        private CrowdAvoidanceSet mAvoidanceSet = null;
+        public CrowdAvoidanceParams[] CrowdAvoidanceConfig;
 
         [SerializeField]
-        private int mMaxQueryNodes = 2048;
+        private int mMaxQueryNodes = 2048;//2048
 
         [SerializeField]
-        private int mMaxCrowdAgents = 200;
+        private int mMaxCrowdAgents = 64;//200
 
         [SerializeField]
         private float mMaxAgentRadius = 0.5f;
 
         [SerializeField]
-        private int mMaxPath = 256;
+        private int mMaxPath = 512;//256
 
         [SerializeField]
-        private int mMaxStraightPath = 4;
+        private int mMaxStraightPath = 32;//32
 
         [SerializeField]
-        private int mMaxAgents = 200;
+        private int mMaxAgents = 128;//32
 
         [SerializeField]
         private Vector3 mExtents = new Vector3(1, 1, 1);
@@ -65,32 +66,50 @@ namespace FNavigation
 
         public NavManager CreateManager()
         {
+            CheckCrowdAvoidanceSet();
+
             if (!(mNavmeshData && NavmeshData.HasNavmesh))
             {
-                Debug.LogError(name + ": Aborted initialization. Navigation mesh not available.");
+                Debug.LogError("Aborted initialization. Navigation mesh not available.");
                 return null;
             }
 
-            Navmesh navmesh = NavmeshData.GetNavmesh();
+            //Debug.Log("NavmeshData-------"+ NavmeshData);
+            Navmesh navmesh =  NavmeshData.GetNavmesh();
+            if (navmesh == null)
+            {
+                NavStatus theStatus = Navmesh.Create(navMeshData, out navmesh);
+
+                Debug.Log("Navmesh.Create ---->" + theStatus + "---->" + (int)(theStatus & NavStatus.Sucess));
+                if (NavUtil.Failed(theStatus))
+                {
+                    Debug.LogError("NavUtil.Failed(Navmesh.Create(navMeshData, out navmesh) Fail!");
+                }
+                Debug.Log("--------------------\n" + navMeshData + "---" + navMeshData.Length + "\n-----------------\nNavmesh-------" + navmesh);
+            }
+            if (navmesh == null)
+            {
+                Debug.LogError(" navmesh is null");
+                return null;
+            }
             NavmeshQuery query;
             NavStatus status = NavmeshQuery.Create(navmesh, mMaxQueryNodes, out query);
             if ((status & NavStatus.Sucess) == 0)
             {
-                Debug.LogError(
-                    name + ": Aborted initialization. Failed query creation: " + status.ToString());
+                Debug.LogError(" Aborted initialization. Failed query creation: " + status.ToString());
                 return null;
             }
 
             CrowdManager crowd = CrowdManager.Create(mMaxCrowdAgents, mMaxAgentRadius, navmesh);
             if (crowd == null)
             {
-                Debug.LogError(name + ": Aborted initialization. Failed crowd creation.");
+                Debug.LogError("Aborted initialization. Failed crowd creation.");
                 return null;
             }
 
             for (int i = 0; i < CrowdManager.MaxAvoidanceParams; i++)
             {
-                crowd.SetAvoidanceConfig(i, mAvoidanceSet[i]);
+                crowd.SetAvoidanceConfig(i, CrowdAvoidanceConfig[i]);
             }
             NavGroup mGroup = new NavGroup(navmesh, query, crowd, crowd.QueryFilter, mExtents, false);
 
@@ -110,22 +129,78 @@ namespace FNavigation
             return NavManager.Create(mMaxAgents, mGroup, mAgentGroups);
         }
 
-        void Awake()
+
+        private void CheckCrowdAvoidanceSet()
         {
-            NavManager.ActiveManager = CreateManager(); 
-            mManager = NavManager.ActiveManager;
-            mManager.theModeNow = this.theAgentMode;
-            mManager.StartThreadUpdate();
+            if(CrowdAvoidanceConfig == null || CrowdAvoidanceConfig.Length != CrowdManager.MaxAvoidanceParams)
+            {
+                CrowdAvoidanceConfig = new CrowdAvoidanceParams[CrowdManager.MaxAvoidanceParams];
+
+                CrowdAvoidanceConfig[0] = CrowdAvoidanceParams.CreateStandardLow();
+                CrowdAvoidanceConfig[1] = CrowdAvoidanceParams.CreateStandardMedium();
+                CrowdAvoidanceConfig[2] = CrowdAvoidanceParams.CreateStandardGood();
+                CrowdAvoidanceConfig[3] = CrowdAvoidanceParams.CreateStandardHigh();
+
+                for (int i = 4; i < CrowdAvoidanceConfig.Length; i++)
+                {
+                    CrowdAvoidanceConfig[i] = new CrowdAvoidanceParams();
+                }
+            }
         }
 
-        void Update()
+        public void MakeStart(ScriptableObject bakedMesh , byte [] myNavData )
         {
-            mManager.MakeUpdate();
+            try
+            {
+                mNavmeshData = bakedMesh;
+                navMeshData = myNavData;
+                /*
+                Debug.Log("got navMeshData version1: " + BitConverter.ToUInt32(new byte[] 
+                { navMeshData[0] , navMeshData[1] , navMeshData[2], navMeshData[3]
+                    } , 0));
+                 Debug.Log("got navMeshData version2: " + BitConverter.ToUInt32(new byte[] 
+                { navMeshData[0] , navMeshData[1] , navMeshData[2], navMeshData[3],
+                  navMeshData[4] , navMeshData[5] , navMeshData[6], navMeshData[7]
+                    } , 0));
+                */
+
+                if (mNavmeshData == null && navMeshData == null)
+                {
+                    Debug.Log("have not get a baked mesh , UnityAgentController shut down");
+                    isSetup = false;
+                }
+                else
+                {
+                    //Debug.Log("starting NavManager now!");
+                    NavManager.ActiveManager = CreateManager();
+                    //Debug.Log("NavManager.ActiveManager  == "+ NavManager.ActiveManager + " after  CreateManager()");
+                    mManager = NavManager.ActiveManager;
+                    mManager.theModeNow = this.theAgentMode;
+                    mManager.StartThreadUpdate();
+                    isSetup = true;
+                    //Debug.Log("Navigation Agent controller started!!!!!");
+                }
+            }
+            catch(Exception X)
+            {
+                Debug.LogError("UnityAgentController Start with error:" + X.Message + "--" + X.ToString());
+                isSetup = false;
+            }
         }
 
-        private void OnDestroy()
+        public void Update()
         {
-            mManager.StopThreadUpdate();
+            if (isSetup && mManager != null)
+                mManager.MakeUpdate();
         }
+
+        public  void MakeEnd()
+        {
+            if (mManager != null)
+                mManager.StopThreadUpdate();
+            else
+                Debug.Log("mManager == null!");
+        }
+
     }
 }

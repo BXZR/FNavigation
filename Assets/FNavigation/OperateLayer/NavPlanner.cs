@@ -54,14 +54,14 @@ namespace FNavigation
 
             if ((theAgent.flags & NavFlag.PlannerFailed) != 0)
             {
-                Debug.LogError(theAgent.transform.name + ": Planner failed.");
+                //Debug.LogError(theAgent.transform.name + ": Planner failed.");
                 Suspend();
             }
             //在这里进行移动计划的移动，并根据返回值判断
             else if (!mPlanner.Update())
             {
                 theAgent.flags |= NavFlag.PlannerFailed;
-                Debug.LogError(theAgent.transform.name + ": Planner update failed: " + mPlanner);
+                //Debug.LogError(theAgent.transform.name + ": Planner update failed: " + mPlanner);
             }
             return true;
         }
@@ -96,7 +96,7 @@ namespace FNavigation
             else
             {
                 theAgent.flags |= NavFlag.PlannerFailed;
-                Debug.LogError(theAgent.transform.name + ": Planner transition failed: " + state);
+                //Debug.LogError(theAgent.transform.name + ": Planner transition failed: " + state);
             }
         }
 
@@ -108,7 +108,7 @@ namespace FNavigation
 
             theAgent.RemoveFromCrowd();
             theAgent.SetCorridorAssets(false);
-            theAgent.SetPathAssets(false);
+            theAgent.SetPathAssets(true);
 
             theAgent.desiredVelocity = Vector3.zero;
             theAgent.desiredSpeedSq = 0;
