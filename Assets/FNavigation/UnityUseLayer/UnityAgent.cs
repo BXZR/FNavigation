@@ -14,8 +14,10 @@ namespace FNavigation
         public byte agentGroup = 0;
         public float moveSpeed = 4f;
         private int mManagerIndex = -1;
+        //下层的刷新控制单元
         NavState planner;
-        NavState mover;
+        //上层（unity层的刷新控制单元）
+        UnityNavState mover;
 
         public bool moverCanControl = true;
 
@@ -203,7 +205,9 @@ namespace FNavigation
             //mover是unity位置改变，只能在主线程
             planner = new NavPlanner(mNavAgent);
             //用于表现，也就是修改Unity中的移动的move
-            UnitySimpleMovePlan unityMovePlan  = new UnitySimpleMovePlan(mNavAgent);
+            //UnitySimpleMovePlan unityMovePlan  = new UnitySimpleMovePlan();
+            UnityMoveWithFixdRoute unityMovePlan = new UnityMoveWithFixdRoute();
+            unityMovePlan.SetNavAgent(mNavAgent);
             unityMovePlan.yAxisFreeze = this.yAxisFreeze;
             mover = unityMovePlan;
             mManagerIndex = mNavManager.AddAgent(planner, unityMovePlan);
@@ -263,10 +267,7 @@ namespace FNavigation
             if (!showWayPoints  || IsAtDestiontion())
                 return;
 
-            Vector3[] routePoints = this.mNavAgent.GetRoutePoints();
-            //对获得的路点信息做滤镜（后期处理）
-            routePoints = RoutePointFixer.Instance.FixRouteWithPhysics(routePoints);
-
+            Vector3[] routePoints = mover.GetRoutePoint();
             GetLineRenderer();
             theShowLineRenderer.SetPositions(nullVector);
             theShowLineRenderer.material = wayPointMaterial;

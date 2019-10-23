@@ -6,14 +6,8 @@ using UnityEngine;
 namespace FNavigation
 {
     //这个是用于unity表现的上层移动，更新的是NavAgent所记录的Transform
-    public class UnitySimpleMovePlan :NavState
+    public class UnitySimpleMovePlan : UnityNavState
     {
-        public readonly NavAgent theNavAgent;
-        public bool yAxisFreeze = false;
-        public UnitySimpleMovePlan(NavAgent agent)
-        {
-            this.theNavAgent = agent;
-        }
 
         public override bool Enter()
         {

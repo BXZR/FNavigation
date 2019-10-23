@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace FNavigation
@@ -41,8 +42,6 @@ namespace FNavigation
                     Vector3 hitPoint = GetObstacleHitPoiint(routePoints[i -1], direction);
                     Vector3 offset = (routePoints[i -1 ] - hitPoint).normalized * 0.1f;
                     Vector3 newPoint = hitPoint + offset;
-
-                    //调试用////////////////////////////
                     //CreateGiz(newPoint , "newPoint");
 
                     //寻找以这个新的路点作为起点转向之后能够走出障碍的方向
@@ -52,10 +51,9 @@ namespace FNavigation
                     if (!isOk)
                         continue;
 
-                    //调试用////////////////////////////
-                    //CreateGiz(newPoint + AimDir.normalized*3, "AimDir");
-                    //LineRenderer xl= x.AddComponent<LineRenderer>();
-                    //xl.SetPositions(new Vector3[] { newPoint , newPoint + AimDir.normalized * 3 });
+                   // CreateGiz(newPoint + AimDir.normalized*3, "AimDir");
+                   // LineRenderer xl= x.AddComponent<LineRenderer>();
+                   // xl.SetPositions(new Vector3[] { newPoint , newPoint + AimDir.normalized * 3 });
 
                     //获得一个新的转折点
                     Vector3 newPoint2 = GetNewPointInNewDiretion(newPoint , AimDir);
@@ -121,7 +119,7 @@ namespace FNavigation
             Vector3 eulerAngles = Quaternion.FromToRotation(Vector3.forward, startDirection ).eulerAngles;
             Debug.Log("eulerAngles = "+ eulerAngles.y);
             float nowAngle = eulerAngles.y;
-            for (float angle = 0f; angle  < 360f; angle += 20f)
+            for (float angle = 0f; angle  < 360f; angle += 10f)
 
             {
                 Debug.Log("startDirection = " + startDirection);
