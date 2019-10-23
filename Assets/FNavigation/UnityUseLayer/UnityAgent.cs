@@ -264,6 +264,9 @@ namespace FNavigation
                 return;
 
             Vector3[] routePoints = this.mNavAgent.GetRoutePoints();
+            //对获得的路点信息做滤镜（后期处理）
+            routePoints = RoutePointFixer.Instance.FixRouteWithPhysics(routePoints);
+
             GetLineRenderer();
             theShowLineRenderer.SetPositions(nullVector);
             theShowLineRenderer.material = wayPointMaterial;
@@ -291,12 +294,6 @@ namespace FNavigation
             theShowLineRenderer.SetPositions(newLine);
         }
 
-        //根据物理场景修正路点之间的联系
-        private Vector3[] FixRouteWithPhysics(Vector3[] basicRoutPoints)
-        {
-            Vector3[] fixedRoutePoints = new Vector3[basicRoutPoints.Length];
-            return fixedRoutePoints;
-        }
 
         public  float GetTerrainPosY(float x, float z)
         {

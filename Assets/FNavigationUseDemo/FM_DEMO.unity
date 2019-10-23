@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.4397126, g: 0.48812783, b: 0.5683486, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -52,7 +52,7 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 10
     m_Resolution: 2
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 382f865955621be47aa1ebdd2cf687d0,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -146,8 +147,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &6859829
 MeshRenderer:
@@ -242,8 +244,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &58349072
 MeshRenderer:
@@ -338,8 +341,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &80736645
 MeshRenderer:
@@ -434,8 +438,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &159050909
 MeshRenderer:
@@ -530,8 +535,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &181153837
 MeshRenderer:
@@ -626,8 +632,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &197379548
 MeshRenderer:
@@ -773,7 +780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205994361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0745106, y: 1.4463074, z: -2.9332256}
+  m_LocalPosition: {x: 4.0745106, y: -3.74, z: -2.9332256}
   m_LocalScale: {x: 70.04214, y: 0.20178446, z: 46.66657}
   m_Children: []
   m_Father: {fileID: 0}
@@ -813,8 +820,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &209390461
 MeshRenderer:
@@ -909,8 +917,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &210188534
 MeshRenderer:
@@ -1005,8 +1014,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &223786518
 MeshRenderer:
@@ -1101,8 +1111,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &227583274
 MeshRenderer:
@@ -1197,8 +1208,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &238876923
 MeshRenderer:
@@ -1293,8 +1305,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &301691863
 MeshRenderer:
@@ -1389,8 +1402,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &305201612
 MeshRenderer:
@@ -1485,8 +1499,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &324524056
 MeshRenderer:
@@ -1581,8 +1596,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &331641027
 MeshRenderer:
@@ -1677,8 +1693,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &370228200
 MeshRenderer:
@@ -1773,8 +1790,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &375816301
 MeshRenderer:
@@ -1869,8 +1887,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &410499816
 MeshRenderer:
@@ -1965,8 +1984,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &413111774
 MeshRenderer:
@@ -2061,8 +2081,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &501722441
 MeshRenderer:
@@ -2157,8 +2178,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &503231376
 MeshRenderer:
@@ -2253,8 +2275,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &504733122
 MeshRenderer:
@@ -2349,8 +2372,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &544817125
 MeshRenderer:
@@ -2445,8 +2469,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &605127846
 MeshRenderer:
@@ -2541,8 +2566,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &613948038
 MeshRenderer:
@@ -2637,8 +2663,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &618788243
 MeshRenderer:
@@ -2699,6 +2726,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &653542979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653542983}
+  - component: {fileID: 653542982}
+  - component: {fileID: 653542981}
+  - component: {fileID: 653542980}
+  m_Layer: 0
+  m_Name: Cube (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &653542980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653542979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &653542981
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653542979}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &653542982
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653542979}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &653542983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653542979}
+  m_LocalRotation: {x: -0.047242675, y: -0.89104784, z: -0.022320947, w: 0.45089218}
+  m_LocalPosition: {x: -16.35, y: 4.57, z: -0.45}
+  m_LocalScale: {x: 2.147869, y: 15.836, z: 7.4104023}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 89
+  m_LocalEulerAnglesHint: {x: -4.7250004, y: -126.47101, z: 3.686}
 --- !u!1 &671911651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,8 +2851,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &671911653
 MeshRenderer:
@@ -2829,8 +2948,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &676353537
 MeshRenderer:
@@ -3016,8 +3136,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &700022548
 MeshRenderer:
@@ -3112,8 +3233,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &793488427
 MeshRenderer:
@@ -3208,8 +3330,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &800627645
 MeshRenderer:
@@ -3304,8 +3427,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &810518316
 MeshRenderer:
@@ -3400,8 +3524,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &824793570
 MeshRenderer:
@@ -3496,8 +3621,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &827661565
 MeshRenderer:
@@ -3592,8 +3718,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &891390692
 MeshRenderer:
@@ -3688,8 +3815,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &968038044
 MeshRenderer:
@@ -3749,6 +3877,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &987118793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987118797}
+  - component: {fileID: 987118796}
+  - component: {fileID: 987118795}
+  - component: {fileID: 987118794}
+  m_Layer: 0
+  m_Name: Cube (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &987118794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987118793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &987118795
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987118793}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &987118796
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987118793}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &987118797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987118793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.61, y: 4.6144257, z: -2.7047691}
+  m_LocalScale: {x: 2.147869, y: 15.836, z: 12.454876}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993915019
 GameObject:
@@ -3868,7 +4087,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.54
   m_Range: 10
   m_SpotAngle: 30
@@ -3903,13 +4122,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002078520}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.5550467, y: -0.21182157, z: 0.14872427, w: 0.7905289}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 70.147, y: -30.000002, z: 0}
 --- !u!1 &1016066723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,8 +4163,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1016066725
 MeshRenderer:
@@ -4040,8 +4260,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1028295149
 MeshRenderer:
@@ -4136,8 +4357,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1076183205
 MeshRenderer:
@@ -4232,8 +4454,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1121440092
 MeshRenderer:
@@ -4328,8 +4551,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1125784522
 MeshRenderer:
@@ -4424,8 +4648,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1133866561
 MeshRenderer:
@@ -4520,8 +4745,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1134719166
 MeshRenderer:
@@ -4616,8 +4842,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1140472509
 MeshRenderer:
@@ -4678,6 +4905,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1141830756
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141830758}
+  - component: {fileID: 1141830757}
+  m_Layer: 0
+  m_Name: '!ftraceLightmaps'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1141830757
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141830756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fa80e7116296f4eb4f49ec1544ee22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1141830758
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141830756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 88
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1172250762
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,8 +4982,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1172250764
 MeshRenderer:
@@ -4808,8 +5079,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1174921557
 MeshRenderer:
@@ -4904,8 +5176,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1190011625
 MeshRenderer:
@@ -5000,8 +5273,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1210081822
 MeshRenderer:
@@ -5096,8 +5370,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1234583051
 MeshRenderer:
@@ -5192,8 +5467,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1236186700
 MeshRenderer:
@@ -5288,8 +5564,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1262315668
 MeshRenderer:
@@ -5384,8 +5661,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1271530231
 MeshRenderer:
@@ -5480,8 +5758,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1301581253
 MeshRenderer:
@@ -5576,8 +5855,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1328029915
 MeshRenderer:
@@ -5672,8 +5952,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1361333908
 MeshRenderer:
@@ -5768,8 +6049,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1372248562
 MeshRenderer:
@@ -5864,8 +6146,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1384134783
 MeshRenderer:
@@ -5960,8 +6243,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1429050347
 MeshRenderer:
@@ -6068,8 +6352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7030b91a0d29ed345b9a63341bced96c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!124 &1434911131
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6146,16 +6428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c144a21b7b89dd7458509772c82dc218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1521118679
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,8 +6462,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1521118681
 MeshRenderer:
@@ -6286,8 +6559,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1535856917
 MeshRenderer:
@@ -6382,8 +6656,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1554911700
 MeshRenderer:
@@ -6478,8 +6753,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1558554018
 MeshRenderer:
@@ -6574,8 +6850,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1607529697
 MeshRenderer:
@@ -6670,8 +6947,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1610580930
 MeshRenderer:
@@ -6766,8 +7044,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1616331306
 MeshRenderer:
@@ -6860,10 +7139,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentGroup: 0
-  moveSpeed: 4
+  moveSpeed: 0
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 0
   mouseIndex: 1
 --- !u!23 &1622276430
 MeshRenderer:
@@ -6918,7 +7198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622276428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.118289, y: 4.34, z: -1.8982882}
+  m_LocalPosition: {x: -3.1, y: 4.34, z: -1.8982882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6958,8 +7238,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1635993207
 MeshRenderer:
@@ -7054,8 +7335,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1660812792
 MeshRenderer:
@@ -7145,22 +7427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d555194f16f6f0f4789a33f16684b842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: a743d2404cd152d41bdfa3058d924edc,
-    type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  preparePoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  diffractionFlags: 0
-  engineLogging: 0
 --- !u!4 &1725302309
 Transform:
   m_ObjectHideFlags: 0
@@ -7209,8 +7475,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1726950666
 MeshRenderer:
@@ -7492,8 +7759,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1745407823
 MeshRenderer:
@@ -7588,8 +7856,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1767351816
 MeshRenderer:
@@ -7684,8 +7953,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1776083366
 MeshRenderer:
@@ -7780,8 +8050,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1900444410
 MeshRenderer:
@@ -7876,8 +8147,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1937300169
 MeshRenderer:
@@ -7972,8 +8244,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1976102079
 MeshRenderer:
@@ -8068,8 +8341,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &1997723531
 MeshRenderer:
@@ -8255,8 +8529,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 1
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &2039015517
 MeshRenderer:
@@ -8351,8 +8626,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &2083856276
 MeshRenderer:
@@ -8447,8 +8723,9 @@ MonoBehaviour:
   agentGroup: 0
   moveSpeed: 4
   moverCanControl: 1
-  showWayPoints: 0
+  showWayPointsLabel: 0
   nowDestination: {x: 0, y: 0, z: 0}
+  yAxisFreeze: 1
   mouseIndex: 1
 --- !u!23 &2106817649
 MeshRenderer:

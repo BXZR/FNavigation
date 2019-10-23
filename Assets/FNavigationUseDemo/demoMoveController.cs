@@ -12,6 +12,7 @@ public class demoMoveController : UnityAgent
     {
         MakeInitialize();
         this.SetWayPointMaterial(Resources.Load<Material>("NavigationBake/navigationEffects/wayPointMaterial"));
+        this.showWayPoints = true;
     }
 
     void Update()
