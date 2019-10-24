@@ -74,6 +74,8 @@
     <Compile Include="Assets\FNavigation\UnityUseLayer\RoutePointFixer.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgent.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityAgentController.cs" />
+    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnityMoveWithFixdRoute.cs" />
+    <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnityNavState.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnityMovePlans\UnitySimpleMovePlan.cs" />
     <Compile Include="Assets\FNavigation\UnityUseLayer\UnitySettings\AgentGroupSettingManager.cs" />
     <Compile Include="Assets\FNavigationUseDemo\demoManagerStart.cs" />
